@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instrument RKC 4 dan 5</title>
+  <style>
+    select#regu, select#regu option {
+  text-align-last: center;
+}
+    select#unit, select#unit option {
+  text-align-last: center;
+}
+    select#hari, select#hari option {
+  text-align-last: center;
+}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f9;
+      background-image: url('gambar/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      flex-wrap: nowrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .header-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #002147;
+      font-weight: bold;
+      white-space: nowrap;
+      font-size: clamp(18px, 4vw, 24px);
+      max-width: 60%;
+      text-align: center;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
+      gap: 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    select, button {
+      padding: 10px 16px;
+      font-size: 16px;
+      border: 2px solid #470100;
+      border-radius: 6px;
+      background-color: #fff;
+      width: 180px;
+    }
+
+    button {
+      background-color: #002147;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff6a00;
+      border-color: #ff6a00;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        position: static;
+        text-align: center;
+      }
+
+      .header-title {
+        position: static;
+        transform: none;
+        max-width: 100%;
+      }
+
+      .logo {
+        height: 45px;
+      }
+
+      .main-content {
+        margin-top: 40px;
+        padding: 20px;
+        width: 90%;
+      }
+
+      select, button {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="gambar/Picture2.png" alt="Logo Kiri" class="logo" />
+    <div class="header-title">INSTRUMENT RKC 4 DAN 5</div>
+    <img src="gambar/Picture3.png" alt="Logo Kanan" class="logo" />
+  </header>
+
+  <div class="main-content">
+    <select id="unit">
+      <option value="">Pilih Unit</option>
+      <option value="Tonasa4">Tonasa 4</option>
+      <option value="Tonasa5">Tonasa 5</option>
+    </select>
+
+    <select id="regu">
+      <option value="">Pilih Regu</option>
+      <option value="R4">Regu Rawmill</option>
+      <option value="A4">Regu Automation</option>
+      <option value="K4">Regu Kiln</option>
+      <option value="C4">Regu Coalmill</option>
+    </select>
+
+    <select id="hari">
+      <option value="">Pilih Hari</option>
+      <option value="Senin">Senin</option>
+      <option value="Selasa">Selasa</option>
+      <option value="Rabu">Rabu</option>
+      <option value="Kamis">Kamis</option>
+      <option value="Jumat">Jumat</option>
+    </select>
+
+    <button onclick="bukaHalaman()">Lihat Jadwal</button>
+
+    <button onclick="window.open('https://forms.office.com/r/QgSuBiS7Jd', '_blank')">Link Form</button>
+
+    <button onclick="window.open('https://smip.sig.id/mso/index.php/confirmation', '_blank')">Link MSO</button>
+  </div>
+
+  <script>
+  function bukaHalaman() {
+    const unit = document.getElementById('unit').value;
+    const reguAsli = document.getElementById('regu').value;
+    const hari = document.getElementById('hari').value;
+
+    if (!unit || !reguAsli || !hari) {
+      alert('Silakan pilih unit, regu, dan hari terlebih dahulu.');
+      return;
+    }
+
+    // Tabel urutan hanya untuk regu Tonasa 4
+    const urutan = {
+      R4: { Senin: 1, Selasa: 5, Rabu: 9, Kamis: 13, Jumat: 17 },
+      A4: { Senin: 2, Selasa: 6, Rabu: 10, Kamis: 14, Jumat: 18 },
+      K4: { Senin: 3, Selasa: 7, Rabu: 11, Kamis: 15, Jumat: 19 },
+      C4: { Senin: 4, Selasa: 8, Rabu: 12, Kamis: 16, Jumat: 20 }
+    };
+
+    let nomor = urutan[reguAsli]?.[hari];
+    if (!nomor) {
+      alert('Kombinasi regu dan hari tidak ditemukan.');
+      return;
+    }
+
+    let reguFix = reguAsli;
+
+    if (unit === 'Tonasa5') {
+      nomor += 20;
+      reguFix = reguAsli.replace('4', '5'); // Misal A4 → A5
+    }
+
+    const url = `${nomor}. Checklist_${reguFix}_${hari}_${unit}.html`;
+    window.location.href = url;
+  }
+</script>
+</body>
+</html>

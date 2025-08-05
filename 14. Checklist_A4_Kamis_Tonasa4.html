@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist_A4_Kamis_Tonasa4</title>
+  <style>    
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td.no-border {
+      border: none !important;
+    }
+
+    @page {
+      size: A3 portrait;
+      margin: 0;
+    }
+    @media print {
+    #tanggal,
+    label[for="tanggal"],
+    #printBtn {
+      display: none;
+    }
+  }
+
+    @media print {
+      body {
+        margin: 0;
+      }
+      #printBtn {
+        display: none;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ccc;
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+    }
+
+    .a4 {
+      width: 297mm; /* Tetap dipakai agar konten tidak pecah */
+      height: 420mm;
+      background: white;
+      margin: auto;
+      box-sizing: border-box;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <button id="printBtn" onclick="window.print()">🖨️ Cetak</button>
+  <label for="tanggal">Pilih Tanggal:</label>
+  <input type="date" id="tanggal" />
+  <div class="a4">
+    <br><br>
+    <table border="1" align="center" width="1050px">
+      <tr>
+        <td align="center" rowspan="2" colspan="2"><img src="gambar/Picture2.png" alt="Logo Tonasa" width="110px" height="100px"></td>
+        <th colspan="5" align="center" style="font-size:12pt;">PT. Semen Tonasa<br>Preventive Maintenance Scheduling (PM.Schedule)</th>
+        <td align="center" rowspan="2" style="width: 149px;"><img src="gambar/Picture3.png" alt="Logo SIG" width="140px" height="100px"></td>
+      </tr>
+      <tr>        
+        <th colspan="5" align="center" style="font-size:12pt;">CHECK-LIST<br>INSPEKSI PLC CONTROL AREA COOLER</th>
+      </tr>      
+      <tr>
+        <th colspan="8" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Departemen</div>
+              <div style="width: 10px;">:</div>
+              <div>Maintenance</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Biro</div>
+              <div style="width: 10px;">:</div>
+              <div>Unit of Elins Maintenance 2</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Seksi</div>
+              <div style="width: 10px;">:</div>
+              <div>Pemeliharaan Instrument RKC 4/5</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Area Inspeksi</div>
+              <div style="width: 10px;">:</div>
+              <div>Cooler</div>
+            </div>
+          </div>           
+        </th>
+      </tr>
+      <tr>
+        <td colspan="8" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;"><b>1. Safety</b></div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 60px;">Hazard</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 395px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+              <div style="width: 100px;">PPE </div>
+              <div style="width: 15px;">:</div>
+              <div>Using as mandatory and additional as required on site condition</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 60px;">Isolation</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 395px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+              <div style="width: 100px;">Reference</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 460px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>            
+          </div>       
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <td colspan="8" align="left" style="padding-left: 2px ;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;"><b>2. Tools</b></div>
+            </div>
+            <div style="display: flex; ">
+              <div style="width: 20px;">1)</div>
+              <div style="width: 450px;">Electrical tester</div>
+              <div style="width: 20px;">3)</div>
+              <div style="width: 180px;">Kuas</div>
+              <div style="width: 40px; font-weight: bold;">Date</div>
+              <div style="width: 15px; font-weight: bold;">:</div>
+              <div>
+                <b id="outputTanggal1"><script>document.write(new Date().toLocaleDateString('id-ID',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+' '+new Date().toTimeString().slice(0,5));</script></b>  
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 20px;">2)</div>
+              <div style="width: 450px;">Multi meter</div>
+              <div style="width: 20px;">4) </div>
+              <div style="width: 180px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>            
+          </div>      
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <td colspan="1" style="width: 30px; font-weight: bold;" align="center" rowspan="2">No</td>
+        <td colspan="1" style="width: 85px; font-weight: bold;" align="center" rowspan="2">Area</td>
+        <td colspan="1" style="width: 320px;font-weight: bold;" align="center" rowspan="2">Task</td>
+        <td colspan="1" style="width: 275px;font-weight: bold;" align="center" rowspan="2">Standard</td>
+        <td colspan="2" style="width: 80px; font-weight: bold;" align="center">Tag Number Equipment</td>
+        <td align="center" colspan="2" rowspan="2" style="font-weight: bold;">Remarks</td>
+      </tr>      
+      <tr>
+        <td colspan="1" style="width: 40px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">R07-PLC</td>
+        <td colspan="1" style="width: 40px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">417MD01</td>   
+      </tr>   
+      <tr>
+        <td align="center">1</td>
+        <th align="center" colspan="1" rowspan="17" style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11;">COOLER</th>
+        <td colspan="1">Ruangan ER</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>    
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td colspan="1">Fuse spare max 5 ea</td>
+        <td colspan="1" align="center">Ready</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td colspan="1">PLC</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">4</td>
+        <td colspan="1">Manual book</td>
+        <td colspan="1" align="center">Tersedia</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">5</td>
+        <td colspan="1">Backup PLC</td>
+        <td colspan="1" align="center">Update (tersedia)</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">6</td>
+        <td colspan="1">Wiring diagram hard copy</td>
+        <td colspan="1" align="center">Update (tersedia)</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">7</td>
+        <td colspan="1">Wiring diagram soft copy</td>
+        <td colspan="1" align="center">Update (tersedia)</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>    
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td colspan="1">Backlight display HMI</td>
+        <td colspan="1" align="center">Menyala</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td colspan="1">Backup HMI</td>
+        <td colspan="1" align="center">Update (tersedia)</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">10</td>
+        <td colspan="1">Pengukuran power supply 24V selama 5 menit</td>
+        <td colspan="1" align="center">24 VDC</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">11</td>
+        <td colspan="1">Temperature room AC</td>
+        <td colspan="1" align="center">< 27 °C</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">12</td>
+        <td colspan="1">Signal field instrument</td>
+        <td colspan="1" align="center">Update (tersedia)</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">13</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">14</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">15</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">16</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>       
+      <tr>
+        <td align="center">17</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>   
+      <tr>
+        <td colspan="8" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <td align="left" style="padding-left: 2px ;" colspan="3">
+          <div style="display: flex;">
+              <div style="width: 40px; font-weight: bold;">Date</div>
+              <div style="width: 15px; font-weight: bold;">:</div>
+              <div>
+                <b id="outputTanggal2">
+                  <script>
+                    document.write(new Date().toLocaleDateString('id-ID', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    }));
+                  </script>
+                </b>
+              </div>
+            </div> 
+        </td>
+        <td colspan="3">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 170px; font-weight: bold;">Signed by Inspector</div>
+              <div style="width: 15px;  font-weight: bold;">:</div>
+            </div>                      
+          </div>  
+        </td>
+        <td colspan="6">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 50px; font-weight: bold;">Name</div>
+              <div style="width: 15px; font-weight: bold;">:</div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:98%; font-weight: bold; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" style="padding-left: 2px ;" colspan="3">
+          <div style="display: flex;">
+              <div style="width: 40px; font-weight: bold;">Date</div>
+              <div style="width: 15px; font-weight: bold;">:</div>
+              <div>
+                <b id="outputTanggal3">
+                  <script>
+                    document.write(new Date().toLocaleDateString('id-ID', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    }));
+                  </script>
+                </b>
+                <script>
+                  const inputTanggal = document.getElementById('tanggal');
+                  const output1 = document.getElementById('outputTanggal1');
+                  const output2 = document.getElementById('outputTanggal2');
+                  const output3 = document.getElementById('outputTanggal3');
+
+                  inputTanggal.addEventListener('change', function () {
+                    const selectedDate = new Date(this.value);
+                    const now = new Date();
+
+                    if (!isNaN(selectedDate)) {
+                      // Format lengkap untuk outputTanggal1
+                      const fullFormat = selectedDate.toLocaleDateString('id-ID', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      });
+                      const jam = now.toLocaleTimeString('en-GB', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      });
+                      output1.textContent = `${fullFormat} ${jam}`;
+
+                      // Format singkat (hanya tanggal) untuk outputTanggal2 & 3
+                      const shortFormat = selectedDate.toLocaleDateString('id-ID', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      });
+                      output2.textContent = shortFormat;
+                      output3.textContent = shortFormat;
+
+                    } else {
+                      output1.textContent = 'Tanggal tidak valid';
+                      output2.textContent = 'Tanggal tidak valid';
+                      output3.textContent = 'Tanggal tidak valid';
+                    }
+                  });
+                </script> 
+              </div>
+            </div> 
+        </td>
+        <td colspan="3">
+          <div style="display: flex;">
+              <div style="width: 170px; font-weight: bold;">Signed by Supervisor</div>
+              <div style="width: 15px;  font-weight: bold;">:</div>
+            </div>  
+        </td>
+        <td colspan="6">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 50px; font-weight: bold;">Name</div>
+              <div style="width: 15px; font-weight: bold;">:</div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:98%; font-weight: bold; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="13" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 40px;">Note</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 800px;"></div>
+              <div style="height: 25px;">Mengetahui</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 800px;"></div>
+              <div><img src="gambar/Picture4.jpg" alt="Logo Tonasa" width="110px" height="100px"></div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 800px;"></div>
+              <div>Muhammad Ageng Anom</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 800px;"></div>
+              <div>Mgr Instrument RKC 45</div>
+            </div>
+          </div>
+        </td>        
+      </tr>                          
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist_K5_Senin_Tonasa5</title>
+  <style>    
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td.no-border {
+      border: none !important;
+    }
+
+    @page {
+      size: A3 portrait;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+      }
+      #printBtn {
+        display: none;
+      }
+    }
+    @media print {
+    #tanggal,
+    label[for="tanggal"],
+    #printBtn {
+      display: none;
+    }
+  }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ccc;
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+    }
+
+    .a4 {
+      width: 400mm; /* Tetap dipakai agar konten tidak pecah */
+      height: 565mm;
+      background: white;
+      margin: auto;
+      box-sizing: border-box;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <button id="printBtn" onclick="window.print()">🖨️ Cetak</button>
+  <label for="tanggal">Pilih Tanggal:</label>
+  <input type="date" id="tanggal" />
+  <div class="a4">
+    <br><br>
+    <table border="1" align="center" width="95%">   
+      <tr>
+        <td align="center" rowspan="2" colspan="2"><img src="gambar/Picture2.png" alt="Logo Tonasa" width="110px" height="100px"></td>
+        <th colspan="43" align="center" style="font-size:12pt;">PT. Semen Tonasa<br>Preventive Maintenance Scheduling (PM.Schedule)</th>
+        <td align="center" rowspan="2" style="width: 149px;"><img src="gambar/Picture3.png" alt="Logo SIG" width="140px" height="100px"></td>
+      </tr>
+      <tr>        
+        <th colspan="43" align="center" style="font-size:12pt;">CHECK-LIST<br>LANTAI 7 PREHEATER GAS ANALYSER TOP SAMPAI LANTAI 3 BURNER CALCINER</th>
+      </tr>      
+      <tr>
+        <th colspan="46" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Departemen</div>
+              <div style="width: 10px;">:</div>
+              <div>Maintenance</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Biro</div>
+              <div style="width: 10px;">:</div>
+              <div>Unit of Elins Maintenance 2</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Seksi</div>
+              <div style="width: 10px;">:</div>
+              <div>Pemeliharaan Instrument RKC 4/5</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 150px;">Area Inspeksi</div>
+              <div style="width: 10px;">:</div>
+              <div>Preheater</div>
+            </div>
+          </div>           
+        </th>
+      </tr>
+      <tr>
+        <td colspan="46" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;"><b>1. Safety</b></div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 60px;">Hazard</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 395px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+              <div style="width: 100px;">PPE </div>
+              <div style="width: 15px;">:</div>
+              <div>Using as mandatory and additional as required on site condition</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 60px;">Isolation</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 395px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+              <div style="width: 100px;">Reference</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 460px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>            
+          </div>       
+        </td>
+      </tr>
+      <tr>
+        <td colspan="46" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <td colspan="46" align="left" style="padding-left: 2px ;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 150px;"><b>2. Tools</b></div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 20px;">1)</div>
+              <div style="width: 450px;">Electrical tester</div>
+              <div style="width: 20px;">3)</div>
+              <div style="width: 220px;">Kuas</div>
+              <div style="width: 40px;"><b>Date</b></div>
+              <div style="width: 15px;">:</div>
+              <div>
+                <b id="outputTanggal1"><script>document.write(new Date().toLocaleDateString('id-ID',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+' '+new Date().toTimeString().slice(0,5));</script></b>  
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 20px;">2)</div>
+              <div style="width: 450px;">Multi meter</div>
+              <div style="width: 20px;">4) </div>
+              <div style="width: 220px;">
+                <textarea style="padding: 0px; width:98%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>            
+          </div>      
+        </td>
+      </tr>
+      <tr>
+        <td colspan="46" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <th colspan="1" style="width: 30px;" align="center" rowspan="2">No</th>
+        <th colspan="1" style="width: 85px;" align="center" rowspan="2">Area</th>
+        <th colspan="1" style="width: 180px;" align="center" rowspan="2">Task</th>
+        <th colspan="1" style="width: auto;" align="center" rowspan="2">Standard</th>
+        <th colspan="40" style="width: 80px;" align="center">Tag Number Equipment</th>
+        <th align="center" colspan="2" rowspan="2" style="width: 100px;">Remarks</th>
+      </tr>      
+      <tr>
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG01</td>
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG02</td>
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG10</td>
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG04</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG05</td>     
+
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">541DG06</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542DG02</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542DG04</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542AN01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542AN01</td>           
+
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N02P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N05T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N03T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N02P03</td>  
+
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N07P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CL01N08P01</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN01N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN02N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN01N02P01</td>
+        
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN06N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN07N01T01</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN06N02P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN03N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN03N03T01</td>
+        
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN03N04P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN04N01T01</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN04N03T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN04N02P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN04N04P01</td>
+        
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN08N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN08N03T01</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN08N04P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN09N01T01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN09N03T01</td>
+        
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN09N02P01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542CN09N04P01</td>      
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542BQ01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542DG01</td>     
+        <td colspan="1" style="width: 10px; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11pt;" align="center">542DG03</td>
+      </tr>   
+      <tr>
+        <td align="center"></td>
+        <td align="center" colspan="1" rowspan="31" style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11; font-weight: bold;">ELECTRICAL</td>
+        <th colspan="1" align="center">DIVERTER GATE</th>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="2"></td>    
+      </tr>      
+      <tr>
+        <td align="center">1</td>
+        <td colspan="1">Cek Control</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+            <tr>
+        <td align="center">2</td>
+        <td colspan="1">Cek Limit</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>  
+            <tr>
+        <td align="center">3</td>
+        <td colspan="1">Cek Hose, Clamp, Conduit, Fitting</td>
+        <td colspan="1" align="center">Rapat, tidak ada kebocoran</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td colspan="1">Cek Solenoid</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center"></td>
+        <th colspan="1" align="center">GAS ANALYSER</th>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="2"></td>    
+      </tr>      
+      <tr>
+        <td align="center">5</td>
+        <td colspan="1">Cek Probe Filter</td>
+        <td colspan="1" align="center">Bersih tidak retak/pecah</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td colspan="1">Cek Konektor, Hose</td>
+        <td colspan="1" align="center">Rapat tidak bocor</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td colspan="1">Cek Modul</td>
+        <td colspan="1" align="center">Display normal</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td colspan="1">Cek Pipa Gas Sampling</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td colspan="1" >Cek Filter Moisture</td>
+        <td colspan="1" align="center">Kering, tidak muncul alarm</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td colspan="1">Cek System Evaporator</td>
+        <td colspan="1" align="center"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">11</td>
+        <td colspan="1">Cek Pump Peristaltic</td>
+        <td colspan="1" align="center">Bearing tidak kasar, hose tidak bocor</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>    
+      <tr>
+        <td align="center">12</td>
+        <td colspan="1">Cek Pump Gas</td>
+        <td colspan="1" align="center">Bearing tidak kasar, membran tidak robek</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>          
+      <tr>
+        <td align="center">13</td>
+        <td colspan="1">Cek Interlocking Terhadap EP</td>
+        <td colspan="1" align="center">Terinterlocking</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center"></td>
+        <th colspan="1" align="center">TEMPERATURE CYCLONE</th>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="2"></td>    
+      </tr>
+      <tr>
+        <td align="center">14</td>
+        <td colspan="1">Cek Pipa </td>
+        <td colspan="1" align="center">Bersih dari coating</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center">15</td>
+        <td colspan="1">Cek Kedalaman Pipa (TOP)</td>
+        <td colspan="1" align="center">30 cm</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center">16</td>
+        <td colspan="1">Cek Kedalaman Pipa (BOTTOM)</td>
+        <td colspan="1" align="center">40 cm</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>          
+      <tr>
+        <td align="center">17</td>
+        <td colspan="1">Cek Lubang Sensor</td>
+        <td colspan="1" align="center">Tidak ada genangan air</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>                
+      <tr>
+        <td align="center"></td>
+        <th colspan="1" align="center">DRAFT CYCLONE</th>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="2"></td>    
+      </tr>
+      <tr>
+        <td align="center">18</td>
+        <td colspan="1">Cek Tubing</td>
+        <td colspan="1" align="center">Bersih dari coating</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center">19</td>
+        <td colspan="1">Cek Konektor</td>
+        <td colspan="1" align="center">Rapat</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center"></td>
+        <th colspan="1" align="center">BLASTER</th>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="1" align="center"></td>
+        <td colspan="2"></td>    
+      </tr>      
+      <tr>
+        <td align="center">20</td>
+        <td colspan="1">Sensor Pressure</td>
+        <td colspan="1" align="center">Bersih</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr>      
+      <tr>
+        <td align="center">21</td>
+        <td colspan="1">Kabel</td>
+        <td colspan="1" align="center">Tidak short/terbakar</td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" checked style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">22</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">23</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">24</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">25</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td align="center">26</td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1"><textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea></td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="1" align="center">
+          <label><input type="checkbox" style="accent-color: black;"></label>
+        </td>
+        <td colspan="2">
+          <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:center;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+        </td>   
+      </tr> 
+      <tr>
+        <td colspan="46" align="center">&nbsp;</td>        
+      </tr>
+      <tr>
+        <td align="left" style="padding-left: 2px ;" colspan="4">
+          <div style="display: flex;">
+              <div style="width: 40px;"><b>Date</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+              <div>
+                <b id="outputTanggal2">
+                  <script>
+                    document.write(new Date().toLocaleDateString('id-ID', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    }));
+                  </script>
+                </b>
+              </div>
+            </div> 
+        </td>
+        <td colspan="20">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 170px;"><b>Signed by Inspector</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+            </div>                      
+          </div>  
+        </td>
+        <td colspan="22">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 70px;"><b>Name</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:98%; font-weight: bold; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" style="padding-left: 2px ;" colspan="4">
+          <div style="display: flex;">
+              <div style="width: 40px;"><b>Date</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+              <div>
+                <b id="outputTanggal3">
+                  <script>
+                    document.write(new Date().toLocaleDateString('id-ID', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    }));
+                  </script>
+                </b>
+                <script>
+                  const inputTanggal = document.getElementById('tanggal');
+                  const output1 = document.getElementById('outputTanggal1');
+                  const output2 = document.getElementById('outputTanggal2');
+                  const output3 = document.getElementById('outputTanggal3');
+
+                  inputTanggal.addEventListener('change', function () {
+                    const selectedDate = new Date(this.value);
+                    const now = new Date();
+
+                    if (!isNaN(selectedDate)) {
+                      // Format lengkap untuk outputTanggal1
+                      const fullFormat = selectedDate.toLocaleDateString('id-ID', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      });
+                      const jam = now.toLocaleTimeString('en-GB', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      });
+                      output1.textContent = `${fullFormat} ${jam}`;
+
+                      // Format singkat (hanya tanggal) untuk outputTanggal2 & 3
+                      const shortFormat = selectedDate.toLocaleDateString('id-ID', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      });
+                      output2.textContent = shortFormat;
+                      output3.textContent = shortFormat;
+
+                    } else {
+                      output1.textContent = 'Tanggal tidak valid';
+                      output2.textContent = 'Tanggal tidak valid';
+                      output3.textContent = 'Tanggal tidak valid';
+                    }
+                  });
+                </script>
+              </div>
+            </div> 
+        </td>
+        <td colspan="20">
+          <div style="display: flex;">
+              <div style="width: 170px;"><b>Signed by Supervisor</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+            </div>  
+        </td>
+        <td colspan="22">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 70px;"><b>Name</b></div>
+              <div style="width: 15px;"><b>:</b></div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:98%; font-weight: bold; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="46" align="left" style="padding-left: 2px;">
+          <div>
+            <div style="display: flex;">
+              <div style="width: 40px;">Note</div>
+              <div style="width: 15px;">:</div>
+              <div style="width: 100%;">
+                <textarea style="padding: 0px; width:100%; font-family:Arial, sans-serif; font-size:11pt; border:none; resize:none; overflow:auto; display:flex; align-items:center; justify-content:center; text-align:left;" rows="1" oninput="this.style.height='auto'; this.style.height=this.scrollHeight + 'px';"></textarea>
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 85%;"></div>
+              <div style="height: 25px;">Mengetahui</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 85%;"></div>
+              <div><img src="gambar/Picture4.jpg" alt="Logo Tonasa" width="110px" height="100px"></div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 85%;"></div>
+              <div>Muhammad Ageng Anom</div>
+            </div>
+            <div style="display: flex;">
+              <div style="width: 85%;"></div>
+              <div>Mgr Instrument RKC 45</div>
+            </div>
+          </div>
+        </td>        
+      </tr>                          
+    </table>
+  </div>
+</body>
+</html>
